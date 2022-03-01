@@ -1,0 +1,12 @@
+package xyz.octans.model;
+
+public class Usuario {
+	private int id;
+	private String nombreUsuario;
+	private char activo;
+	
+	private Rol rol;
+	
+	
+
+}

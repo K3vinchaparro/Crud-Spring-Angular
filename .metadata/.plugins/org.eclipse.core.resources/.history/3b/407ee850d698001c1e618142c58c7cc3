@@ -1,0 +1,50 @@
+package xyz.octans.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import net.bytebuddy.asm.Advice.OffsetMapping.Sort;
+import xyz.octans.model.Usuario;
+import xyz.octans.repository.UsuarioRepository;
+
+@Service
+public class UsuarioService {
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	public List<Usuario> findAll(Sort sort){
+		return usuarioRepository.findAll();
+	}
+
+	
+
+	public void deleteById(Long id) {
+		usuarioRepository.deleteById(id);
+		
+	}
+
+	public void delete(Usuario entity) {
+		usuarioRepository.delete(entity);
+		
+	}
+
+	public Usuario findByNombreUsuario(String nombreUsuario) {
+		// TODO Auto-generated method stub
+		Usuario usuario = usuarioRepository.findByNombreUsuario(nombreUsuario);
+		System.out.println(usuario);
+		return usuarioRepository.findByNombreUsuario(nombreUsuario);
+	}
+	
+	public Usuario save(Usuario usuario) {
+		return usuarioRepository.save(usuario);
+	}
+	
+	public Usuario findById(Long id) {
+		
+		return usuarioRepository.getById(id);
+	}
+
+}

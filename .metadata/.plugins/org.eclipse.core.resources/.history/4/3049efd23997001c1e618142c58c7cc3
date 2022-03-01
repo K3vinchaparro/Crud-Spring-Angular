@@ -1,0 +1,10 @@
+package xyz.octans.model;
+
+public class Rol {
+	//
+	private int id;
+	private String nombreRol;
+	
+	
+
+}

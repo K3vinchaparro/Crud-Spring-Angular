@@ -1,0 +1,5 @@
+package xyz.octans.service;
+
+public class RolService {
+
+}

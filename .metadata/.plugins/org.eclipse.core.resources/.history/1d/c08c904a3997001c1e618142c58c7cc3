@@ -1,0 +1,9 @@
+package xyz.octans.model;
+
+public class Usuario {
+	private String nombreUsuario;
+	private char activo;
+	
+	
+
+}

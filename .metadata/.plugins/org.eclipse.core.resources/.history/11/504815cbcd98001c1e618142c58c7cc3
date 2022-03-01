@@ -1,0 +1,12 @@
+package xyz.octans.repository;
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import xyz.octans.model.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+
+	public Usuario findByNombre_usuario(String nombreUsuario);
+}

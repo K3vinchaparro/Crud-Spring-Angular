@@ -1,0 +1,5 @@
+package xyz.octans.repository;
+
+public interface RolRepository {
+
+}

@@ -1,0 +1,18 @@
+package xyz.octans.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table (name = "usuario")
+public class Usuario {
+	//
+	private int id;
+	private String nombreUsuario;
+	private char activo;
+	
+	private Rol rol;
+	
+	
+
+}
